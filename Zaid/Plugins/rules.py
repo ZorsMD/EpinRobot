@@ -168,7 +168,7 @@ async def rules(e):
         button_name = db.get_rules_button(e.chat_id)
         str(e.chat_id)
         x = Button.url(
-            button_name, "t.me/Zaid2_Robot?start=_rules_{}".format(e.chat_id)
+            button_name, "t.me/EpinRobot?start=_rules_{}".format(e.chat_id)
         )
         await e.reply(translate("Click on the button to see the chat rules!", event.chat_id), buttons=x)
     elif not pr:
