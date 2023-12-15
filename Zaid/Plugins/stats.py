@@ -39,7 +39,7 @@ async def restart(e):
 async def bc(event):
     if not event.sender_id in [OWNER_ID]:
         return await event.reply(
-            "You don't have access to use this, visit @TheSupportChat."
+            "You don't have access to use this, visit @ConsterlySup."
         )
     if event.reply_to:
         r = await event.get_reply_message()
