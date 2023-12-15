@@ -189,7 +189,7 @@ async def new_message_note(event):
             "Tap here to view '{name}' in your private chat.", event.chat_id),
             buttons=Button.url(
                 translate("Click me", event.chat_id),
-                data=f"t.me/Zaid2_Robot?start=notes_{event.chat_id}|{name}",
+                data=f"t.me/EpinRobot?start=notes_{event.chat_id}|{name}",
             ),
             reply_to=event.reply_to_msg_id or event.id,
         )
@@ -239,7 +239,7 @@ async def get(event):
             "Tap here to view '{name}' in your private chat.", event.chat_id),
             buttons=Button.inline(
                 translate("Click me", event.chat_id),
-                data=f"t.me/Zaid2_Robot?start=notes_{event.chat_id}|{name}",
+                data=f"t.me/EpinRobot?start=notes_{event.chat_id}|{name}",
             ),
             reply_to=event.reply_to_msg_id or event.id,
         )
@@ -352,7 +352,7 @@ async def rr(event):
     OUT_STR = translate("**Notes:**\n", event.chat_id)
     for a_note in all_notes:
         luv = f"{chat_id}_{a_note}"
-        OUT_STR += f"- [{a_note}](t.me/Zaid2_Robot?start=notes_{luv})\n"
+        OUT_STR += f"- [{a_note}](t.me/EpinRobot?start=notes_{luv})\n"
     OUT_STR += "You can retrieve these notes by tapping on the notename."
     await event.reply(OUT_STR, link_preview=False)
 
