@@ -81,8 +81,8 @@ async def start(event):
        await event.reply(
              f"{hi} {event.sender.first_name}\n{line}\n{hj}\n{hj2}\n{hj3}\n{hj4}\n{hj5}\n{hj6}\n{hj7}\n{hj8}\n‣ /setlang {hj9}\n{line}\n{hj10}", 
              buttons=[
-        [Button.url("Add me to your group ➕", url="t.me/Zaid2_Robot?startgroup=true")],
-        [Button.url("Channel 📢", url="t.me/TheUpdatesChannel"), Button.url("Support 🌎", url="t.me/thesupportchat")],
+        [Button.url("Add me to your group ➕", url="t.me/EpinRobot?startgroup=true")],
+        [Button.url("Channel 📢", url="t.me/EpinStore"), Button.url("Support 🌎", url="t.me/ConsterlySup")],
         [Button.inline("language 🌐", data=f"langs"), Button.inline("Help ⁉️", data="help_menu")]])
     if event.is_group:
         IMSG = f"{random.choice(IMG)}"
@@ -90,7 +90,7 @@ async def start(event):
              IMSG,
              caption="{} {}".format(hi, event.sender.first_name), 
              buttons=[
-         [Button.url("Add me to your group ➕", url="t.me/Zaid2_Robot?startgroup=true")]])
+         [Button.url("Add me to your group ➕", url="t.me/EpinRobot?startgroup=true")]])
 
 
 JSONDB = None
@@ -205,7 +205,7 @@ async def set_lang(event):
 async def help(event):
     if event.is_group:
         buttons = [
-            [Button.url("❔ Help", "https://t.me/Zaid2_Robot?start=_help")],
+            [Button.url("❔ Help", "https://t.me/EpinRobot?start=_help")],
         ]
         await event.reply(
             "Contact me in PM to get the list of possible commands.",
