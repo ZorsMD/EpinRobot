@@ -172,7 +172,7 @@ async def reset_warns___(e):
         )
 
 
-@Zbot(pattern="^/resetallwarns(@Zaid2_Robot)?$")
+@Zbot(pattern="^/resetallwarns(@EpinRobot)?$")
 async def reset_all_warns_of___chat____(e):
     event = e
     if e.is_private:
@@ -207,7 +207,7 @@ async def c_rm_all_w(e):
     await e.edit(translate("Resetting of all warnings has been cancelled.", e.chat_id))
 
 
-@Zbot(pattern="^/(warn|swarn|dwarn)(@Zaid2_Robot|zaid2_robot)? ?(.*)")
+@Zbot(pattern="^/(warn|swarn|dwarn)(EpinRobot|epinrobot)? ?(.*)")
 async def warn_peepls____(e):
     event = e
     for x in [
@@ -325,7 +325,7 @@ async def warn_peepls____(e):
         )
 
 
-@Zbot(pattern="^/warns(@Zaid2_Robot)? ?(.*)")
+@Zbot(pattern="^/warns(EpinRobot)? ?(.*)")
 async def warns___(e):
     event = e
     if e.is_private:
@@ -374,7 +374,7 @@ async def warns___(e):
         )
 
 
-@Zbot(pattern="^/rmwarn(@Zaid2_Robot)? ?(.*)")
+@Zbot(pattern="^/rmwarn(@EpinRobot)? ?(.*)")
 async def rmwarns__(e):
     event = e
     if e.is_private:
