@@ -15,7 +15,7 @@ from . import can_del_msg, db, is_owner, ubot
 purgex = db.purge
 
 
-@Zbot(pattern="^/purge(?: |$|@Zaid2_Robot)(.*)")
+@Zbot(pattern="^/purge(?: |$|@EpinRobot)(.*)")
 async def purge(event):
     if (
         event.text.startswith("!purgefrom")
@@ -109,7 +109,7 @@ async def purge_to_(event):
     await event.respond(translate("Purge complete!", event.chat_id))
 
 
-@Zbot(pattern="^/del(?: |$|@Zaid2_Robot)(.*)")
+@Zbot(pattern="^/del(?: |$|@EpinRobot)(.*)")
 async def deve(event):
     if (
         event.text.startswith("+delall")
@@ -133,7 +133,7 @@ async def deve(event):
         await event.delete()
 
 
-@Zbot(pattern="^/spurge(?: |$|@Zaid2_Robot)(.*)")
+@Zbot(pattern="^/spurge(?: |$|@EpinRobot)(.*)")
 async def b(event):
     lt = event.pattern_match.group(1)
     if lt:
