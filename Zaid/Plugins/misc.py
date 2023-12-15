@@ -782,7 +782,7 @@ async def remove_bg_photo_room__(e):
 
 
 
-@Zbot(pattern="^/(stat|stat)(@Zaid2_Robot|@zaid2_robot)?$")
+@Zbot(pattern="^/(stat|stat)(@EpinRobot|@epinrobot)?$")
 async def ___stat_chat__(e):
     for x in ["+stats", "/stats", "!stats", "?stats"]:
         if e.text.startswith(x):
