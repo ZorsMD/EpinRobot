@@ -1,5 +1,5 @@
 {
-  "name": "Telegram Bot",
+  "name": "Epin Robot",
   "description": "A Telegram Management Bot Based On Telethon",
   "keywords": [
     "telegram",
@@ -25,7 +25,7 @@
       "value": ""
     },
     "OWNER_ID": {
-      "description": "Your Id, Go To @Zaid2_Robot Pm and Type /id..",
+      "description": "Your Id, Go To @MissRose_Bot Pm and Type /id..",
       "value": ""
     },
     "MONGO_DB_URI": {
